@@ -87,9 +87,10 @@ nav.s .nl img{height:64px}
 .hero-top{display:flex;align-items:flex-end;justify-content:space-between;padding:140px 52px 0;position:relative;z-index:2}
 /* Massive headline */
 .hero-hl{flex:1}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(11,76,9,.07);border:1px solid rgba(11,76,9,.14);border-radius:100px;padding:8px 16px;font-family:var(--B);font-size:11px;font-weight:600;color:var(--f);margin-bottom:32px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(11,76,9,.07);border:1px solid rgba(11,76,9,.14);border-radius:100px;padding:8px 16px;font-family:var(--B);font-size:13px;font-weight:600;color:var(--f);margin-bottom:32px}
 .bdot{width:6px;height:6px;border-radius:50%;background:var(--l);animation:bdPulse 1.5s ease-in-out infinite}
 @keyframes bdPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.7)}}
+.hero-h1{margin:0;padding:0;font:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;color:inherit;display:block}
 .h1w{font-family:var(--D);font-weight:900;line-height:.92;overflow:hidden;display:block}
 .h1w span{display:block;transform:translateY(110%);animation:hUp .8s cubic-bezier(.22,1,.36,1) forwards}
 .h1w:nth-child(2) span{animation-delay:2.3s}
@@ -564,7 +565,7 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:140px;ba
   .line-reuse    {font-size:clamp(65px,calc(14.7vw - 6px),107px)}
   .line-reduce{font-size:clamp(65px,calc(14.7vw - 6px),107px)}
   .line-repair   {font-size:clamp(65px,calc(14.7vw - 6px),107px)}
-  .hero-badge{display:inline-flex;align-self:flex-start;font-size:10px;padding:6px 14px;margin-bottom:18px}
+  .hero-badge{display:inline-flex;align-self:flex-start;font-size:12px;padding:6px 14px;margin-bottom:18px}
   .hero-meta{padding:22px 20px 72px;flex-direction:column;align-items:flex-start;gap:16px}
   .hero-sub{font-size:16px;max-width:100%;line-height:1.65;color:rgba(14,19,15,.6)}
   .hero-ctas{margin-left:0;flex-direction:column;width:100%;gap:10px}
@@ -887,9 +888,11 @@ footer::before{content:'';position:absolute;top:0;left:0;right:0;height:140px;ba
           <span class="bdot"></span>Sustainability Starts With You
         </div>
 
-        <div class="h1w line-reuse"><span>REUSE.</span></div>
-        <div class="h1w line-reduce"><span>REDUCE.</span></div>
-        <div class="h1w line-repair"><span>RECYCLE.</span></div>
+        <h1 class="hero-h1">
+          <div class="h1w line-reuse"><span>REUSE.</span></div>
+          <div class="h1w line-reduce"><span>REDUCE.</span></div>
+          <div class="h1w line-repair"><span>RECYCLE.</span></div>
+        </h1>
       </div>
     </div>
 
